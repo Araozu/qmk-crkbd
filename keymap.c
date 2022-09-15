@@ -85,13 +85,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
   [_DVO] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB,    KC_Q,    KC_W,    KC_B,    KC_P,    KC_K,                         KC_X,    KC_L,    KC_C,    KC_H,    KC_F, KC_BSPC,
+       KC_TAB,    KC_Q,    KC_W,    KC_B,    KC_P,    KC_K,                         KC_X,    KC_L,    KC_C,    KC_H,    KC_F, KC_LBRC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_MINS,    KC_A,    KC_O,    KC_E,    KC_I, KC_SCLN,                         KC_J,    KC_R,    KC_T,    KC_N,    KC_S, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_RBRC, LWINMOD, LALTMOD, LSFTMOD, LCTRMOD,LALTGRMOD,                   RALTGRMOD, RCTRMOD, RSFTMOD, RALTMOD, RWINMOD,  KC_ESC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                        C(KC_TAB),MO(_NUM),  KC_SPC,    KC_ENT ,MO(_SYM),A(KC_TAB)
+                                C(KC_TAB),LT(_NUM, KC_TAB),  KC_SPC,    KC_BSPC,LT(_SYM, KC_ENT),A(KC_TAB)
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, KC_HOME, KC_PGDN, KC_PGUP,  KC_END,  KC_INS,                       KC_DEL, KC_LEFT, KC_DOWN,  KC_UP, KC_RIGHT, KC_LGUI,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_ESC,
+      KC_LCTL, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                      XXXXXXX,KC_MEDIA_PREV_TRACK,KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_MEDIA_NEXT_TRACK,  KC_ESC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LALT, _______,  KC_SPC,     KC_ENT,MO(_FUN), KC_RALT
                                       //`--------------------------'  `--------------------------'
